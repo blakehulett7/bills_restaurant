@@ -13,6 +13,9 @@ public class Main {
 
         var drink = Drink.create_drink();
         System.out.println(drink);
+        System.out.println();
+
+        var side = Side.create_side();
     }
 }
 
