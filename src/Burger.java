@@ -3,6 +3,7 @@ public class Burger {
     protected String type;
     protected double base_price;
     protected int extra_toppings;
+    protected int max_extra_toppings = 3;
 
     public Burger() {
         type = "regular";
@@ -39,14 +40,18 @@ public class Burger {
         return new Burger(chosen_type, 5);
     }
 
-    public void add_topping() {
-        int max_extra_toppings = 3;
-        if (extra_toppings < max_extra_toppings) {
-            extra_toppings++;
-        }
+    public void add_toppings() {
+        System.out.printf("Would you like to add toppings? (Add up to %d)\n", max_extra_toppings);
+        String selection = Selector.get_selection(max_extra_toppings);
+        int num_selected = Integer.parseInt(selection);
+        extra_toppings = num_selected;
     }
 
     public double get_price() {
         return base_price + extra_toppings * .5;
+    }
+
+    public String toString() {
+        return String.format("I am a %s burger with %d toppings that costs $%.2f", type, extra_toppings, get_price());
     }
 }
