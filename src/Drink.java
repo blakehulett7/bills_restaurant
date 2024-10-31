@@ -54,4 +54,8 @@ public class Drink {
             System.out.println("Error!!!, unsupported drink size");
         }
     }
+
+    public String toString() {
+        return String.format("I am a %s %s that costs $%.2f", size, type, price);
+    }
 }

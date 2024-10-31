@@ -9,8 +9,10 @@ public class Main {
         var burger = Burger.create_burger();
         burger.add_toppings();
         System.out.println(burger);
+        System.out.println();
 
         var drink = Drink.create_drink();
+        System.out.println(drink);
     }
 }
 
