@@ -33,7 +33,7 @@ public class Burger {
         System.out.println("1. yes");
         System.out.println("2. no");
         String deluxe_selection = Selector.get_selection(2);
-        if (deluxe_selection == "1") {
+        if (deluxe_selection.equals("1")) {
             return new DeluxeBurger(chosen_type, 7);
         }
 
