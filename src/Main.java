@@ -4,5 +4,11 @@ public class Main {
 
         var basic_meal = new MealOrder();
 
+        System.out.println("\nWelcome to the meal constructor!");
+        System.out.println("Which burger would you like?");
+        System.out.println("1. regular");
+        System.out.println("2. bbq");
+        System.out.println("3. smash");
+        System.console().readLine("Enter your selection: ");
     }
 }

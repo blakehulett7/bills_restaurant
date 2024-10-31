@@ -1,8 +1,14 @@
 public class Drink {
 
-    private String type = "coke";
-    private String size = "medium";
-    private double price = 2.00;
+    private String type;
+    private String size;
+    private double price;
+
+    public Drink() {
+        type = "coke";
+        size = "medium";
+        price = 2.00;
+    }
 
     public Drink(String type, String size) {
         this.type = type;

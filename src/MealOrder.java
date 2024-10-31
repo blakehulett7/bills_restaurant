@@ -7,6 +7,6 @@ public class MealOrder {
     public MealOrder() {
         burger = new Burger();
         side = new Side();
-        Drink = new Drink();
+        drink = new Drink();
     }
 }
