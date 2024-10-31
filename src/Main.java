@@ -6,9 +6,11 @@ public class Main {
 
         System.out.println("\nWelcome to the meal constructor!");
 
-        Burger burger = Burger.create_burger();
+        var burger = Burger.create_burger();
         burger.add_toppings();
         System.out.println(burger);
+
+        var drink = Drink.create_drink();
     }
 }
 
