@@ -9,7 +9,7 @@ public class DeluxeBurger extends Burger {
     }
 
     public String toString() {
-        return String.format("I am a deluxe %s burger with %d toppings that costs $%.2f", type, extra_toppings,
+        return String.format("Burger: deluxe %s\t\t$%.2f", type,
                 get_price());
     }
 }

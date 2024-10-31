@@ -24,7 +24,7 @@ public class Drink {
         System.out.println("2. medium");
         System.out.println("3. large");
         var size_selection = Selector.get_selection(3);
-        var input_size = switch (type_selection) {
+        var input_size = switch (size_selection) {
             case "1" -> "small";
             case "2" -> "medium";
             case "3" -> "large";

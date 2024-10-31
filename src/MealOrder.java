@@ -10,6 +10,12 @@ public class MealOrder {
         drink = new Drink();
     }
 
+    public MealOrder(Burger burger, Side side, Drink drink) {
+        this.burger = burger;
+        this.side = side;
+        this.drink = drink;
+    }
+
     public void add_another_topping() {
         if (burger.extra_toppings < burger.max_extra_toppings) {
             burger.extra_toppings++;

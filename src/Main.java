@@ -12,12 +12,13 @@ public class Main {
         System.out.println();
 
         var side = Side.create_side();
-        System.out.println(side);
         System.out.println();
 
         var drink = Drink.create_drink();
-        System.out.println(drink);
         System.out.println();
+
+        var meal_order = new MealOrder(burger, side, drink);
+        System.out.println(meal_order);
 
     }
 }
