@@ -52,6 +52,7 @@ public class Burger {
     }
 
     public String toString() {
-        return String.format("I am a %s burger with %d toppings that costs $%.2f", type, extra_toppings, get_price());
+        return String.format("\nBurger: %s\t\t$%.2f\n - Toppings: %d\t\t$%.2f", type,
+                base_price, extra_toppings, extra_toppings * .5);
     }
 }

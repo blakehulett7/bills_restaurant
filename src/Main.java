@@ -3,12 +3,12 @@ public class Main {
         System.out.println("Christ is King!");
 
         var basic_meal = new MealOrder();
+        System.out.println(basic_meal);
 
         System.out.println("\nWelcome to the meal constructor!");
 
         var burger = Burger.create_burger();
         burger.add_toppings();
-        System.out.println(burger);
         System.out.println();
 
         var side = Side.create_side();

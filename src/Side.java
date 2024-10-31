@@ -1,7 +1,7 @@
 public class Side {
 
     private String type;
-    private double price;
+    protected double price;
 
     // I could probably abstract the actual menu creation itself in the future
     public static Side create_side() {
@@ -39,6 +39,6 @@ public class Side {
     }
 
     public String toString() {
-        return String.format("I am %s that cost $%.2f", type, price);
+        return String.format("Side: %s\t\t$%.2f", type, price);
     }
 }

@@ -19,4 +19,13 @@ public class MealOrder {
     public void change_drink(String type) {
         drink.type = type;
     }
+
+    public String toString() {
+        return burger.toString() + "\n" + side.toString() + "\n" + drink.toString() + "\n\t\t\t-----\n\t\t\t"
+                + String.format("$%.2f", calculate_price());
+    }
+
+    private double calculate_price() {
+        return burger.get_price() + side.price + drink.price;
+    }
 }

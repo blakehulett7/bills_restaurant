@@ -2,7 +2,7 @@ public class Drink {
 
     protected String type;
     private String size;
-    private double price;
+    protected double price;
 
     public static Drink create_drink() {
         System.out.println("What kind of drink would you like?");
@@ -56,6 +56,6 @@ public class Drink {
     }
 
     public String toString() {
-        return String.format("I am a %s %s that costs $%.2f", size, type, price);
+        return String.format("Drink: %s %s\t$%.2f", size, type, price);
     }
 }
