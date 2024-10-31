@@ -37,4 +37,8 @@ public class Side {
             System.out.println("Error, price cannot be negative!");
         }
     }
+
+    public String toString() {
+        return String.format("I am %s that cost $%.2f", type, price);
+    }
 }
