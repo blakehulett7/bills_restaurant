@@ -6,20 +6,7 @@ public class Main {
 
         System.out.println("\nWelcome to the meal constructor!");
 
-        System.out.println("Which burger would you like?");
-        System.out.println("1. regular");
-        System.out.println("2. bbq");
-        System.out.println("3. smash");
-        String burger_selection = Selector.get_selection(3);
-
-        System.out.println("What size?");
-        System.out.println("1. small");
-        System.out.println("2. medium");
-        System.out.println("3. large");
-        String burger_size_selection = Selector.get_selection(3);
-
-        System.out.println("Any additional toppings? (Add up to 3)");
-        String burger_toppings_selection = Selector.get_selection(3);
+        var burger = Burger.create_burger();
     }
 }
 
